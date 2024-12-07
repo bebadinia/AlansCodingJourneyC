@@ -45,6 +45,7 @@ if (mouse_check_button_released(mb_left))
 				{
 					room_goto(rm_game_over);
 					current_hearts = max_hearts;  // Reset hearts
+					global.current_encounter = 1;
 				}
 			}
 		

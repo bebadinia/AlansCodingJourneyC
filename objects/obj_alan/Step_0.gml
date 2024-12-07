@@ -29,33 +29,7 @@ if (global.can_move)
             }
         }
     }
-	/*else  // In learn room, always allow right movement
-    {
-        if (x > room_width)
-        {
-            switch(room) 
-            {
-                case rm_python_learn:
-                    room_goto(rm_python_encounter);
-                    break;
-                
-                case rm_python_encounter:
-                    if (current_encounter < 3) 
-                    {
-                        current_encounter++;
-                        room_goto(rm_python_learn);
-                    } 
-                    else 
-                    {
-                        // Level complete
-                        current_encounter = 1;  // Reset for next time
-						room_goto(rm_start);
-                        //room_goto(rm_congratulations);
-                    }
-                    break;
-            }
-        }
-	} */
+	
 
 	// Ground collision check for jumping
 	var on_ground = place_meeting(x, y + 1, obj_ground_parent);
@@ -106,8 +80,9 @@ if (global.can_move)
 				
 					if(current_hearts <= 0) 
 					{
-	                   room_goto(rm_start);
+					   global.current_encounter = 1;
 	                   current_hearts = max_hearts;  // Reset hearts
+					   room_goto(rm_game_over);
 	                }
 	            }
             
@@ -186,7 +161,7 @@ if (global.can_move)
 					{
 						current_hearts = max_hearts;
 					}
-	                room_goto(rm_start);
+	                room_goto(rm_level_complete);
 	            }
 	            break;
 				
@@ -212,7 +187,7 @@ if (global.can_move)
 					{
 						current_hearts = max_hearts;
 					}
-	                room_goto(rm_start);
+	                room_goto(rm_level_complete);
 	            }
 	            break;
 				
@@ -239,7 +214,7 @@ if (global.can_move)
 					{
 						current_hearts = max_hearts;
 					}
-	                room_goto(rm_start);
+	                room_goto(rm_level_complete);
 	            }
 	            break;
 				
@@ -266,7 +241,7 @@ if (global.can_move)
 					{
 						current_hearts = max_hearts;
 					}
-	                room_goto(rm_start);
+	                room_goto(rm_level_complete);
 	            }
 	            break;
 		}

@@ -81,7 +81,7 @@ answers[1, 1] = //First encounter
     ]
 ];
 
-answers[2, 2] = //Second encounter
+answers[1, 2] = //Second encounter
 [ 
     [ // First variant answers
         ["char welcome[] = Hello World", false],
@@ -95,7 +95,7 @@ answers[2, 2] = //Second encounter
     ]
 ];
 
-answers[3, 3] = //Third encounter
+answers[1, 3] = //Third encounter
 [ 
     [ // First variant answers
         ["print(\"Hello World\");", false],
