@@ -1,5 +1,5 @@
 // obj_game_over_controller Create Event
-alan_death = instance_create_layer(room_width/2, -10, "UILayer", obj_dying_alan);
+alan_death = instance_create_layer(room_width/2, 0, "UILayer", obj_dying_alan);
 
 
 text_alpha = 0;  // Start fully transparent
@@ -7,7 +7,7 @@ button_alpha = 0;
 
 // Wait until animation is done to show button
 show_buttons = false;
-alarm[0] = 360;  // 6 seconds
+alarm[0] = 240;  // 6 seconds
 
 // Create back button
 goBackButton = instance_create_layer(room_width/2, 625, "UILayer", obj_start_button);

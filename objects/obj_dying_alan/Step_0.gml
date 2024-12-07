@@ -3,12 +3,12 @@ timer++;
 switch(animation_stage) 
 {
     case 0:  // Initial fall
-        if (timer > 240) 
-		{  // Wait half a second
+        if (timer > 120) 
+		{  
             animation_stage = 1;
             timer = 0;
         }
-        y += 2;  // Slowly fall
+        y += 4;  // Slowly fall
         break;
         
     case 1:  // Flash
