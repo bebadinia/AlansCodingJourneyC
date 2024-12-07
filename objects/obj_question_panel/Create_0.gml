@@ -16,13 +16,13 @@ questions[0, 1] = // First encounter
 ];
 questions[0, 2] = // Second encounter
 [  
-    "Which is the correct way to declare and initialize a string called welcome with the phrase 'Hello World'?",  // First variant
-    "Which is the correct way to declare and initialize a string called name with the sentence 'My name is Ben'?"  // Second variant
+    "Which is the correct way to declare and initialize a string called 'welcome' with the phrase \"Hello World\"?",  // First variant
+    "Which is the correct way to declare and initialize a string called 'name' with the phrase \"Ben\"?"  // Second variant
 ];
 questions[0, 3] = // Third encounter 
 [  
     "Which is the correct way to print the message 'Hello World' to the screen?",  // First variant
-    "Which is the correct way to print the number '5' to the screen?"  // Second variant
+    "Which is the correct way to print the number 5 to the screen?"  // Second variant
 ];
 
 
@@ -34,8 +34,8 @@ questions[1, 1] = // First encounter
 ];
 questions[1, 2] = // Second encounter
 [  
-    "Which is the correct way to declare and initialize a string called welcome with the phrase 'Hello World'?",  // First variant
-    "Which is the correct way to declare and initialize a string called name with the sentence 'My name is Ben'?"  // Second variant
+    "Which is the correct way to declare and initialize a string called 'welcome' with the phrase \"Hello World\"?",  // First variant
+    "Which is the correct way to declare and initialize a string called 'name' with the phrase \"Ben\"?"  // Second variant
 ];
 questions[1, 3] = // Third encounter 
 [  

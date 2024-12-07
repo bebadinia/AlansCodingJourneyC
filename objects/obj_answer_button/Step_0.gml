@@ -43,7 +43,7 @@ if (mouse_check_button_released(mb_left))
 				
 				if(current_hearts <= 0) 
 				{
-					room_goto(rm_start);
+					room_goto(rm_game_over);
 					current_hearts = max_hearts;  // Reset hearts
 				}
 			}
