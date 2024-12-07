@@ -2,20 +2,21 @@
 
 // Initialize global variables    
 // Load saved highest level if it exists
-if (file_exists("savedata.sav")) 
+function load_game()//if (file_exists("savedata.sav")) 
 {
     var _buffer = buffer_load("savedata.sav");
     var _string = buffer_read(_buffer, buffer_string);
     buffer_delete(_buffer);
         
     var _loadData = json_parse(_string);
-    global.highest_level = _loadData[$ "highest_level"] ?? 0;  // 0 = tutorial only
+    global.highest_level = _loadData[$ "highest_level"] ?? 1;  // 0 = tutorial only
 } 
-else 
+
+function new_game()
 {
     // Set default if no save exists
     globalvar highest_level;
-    global.highest_level = 4;  // Start with only tutorial unlocked
+    global.highest_level = 1;  // Start with only tutorial unlocked
 }
     
 // Initialize other variables (not saved)
@@ -35,4 +36,7 @@ function save_game()
     buffer_write(_buffer, buffer_string, _string);
     buffer_save(_buffer, "savedata.sav");
     buffer_delete(_buffer);
+	
+	show_debug_message("Saving game... Highest level: " + string(global.highest_level));
+    show_debug_message("Save location: " + working_directory + "savedata.sav");
 }

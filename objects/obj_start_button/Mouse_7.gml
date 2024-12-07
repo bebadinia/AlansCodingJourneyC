@@ -9,8 +9,22 @@ if (hovering && clicked)
         case "select_level":
             room_goto(rm_level_select);
             break;
-        case "settings":
-            room_goto(rm_python_learn);
+        case "new_game":
+			with(obj_game_controller) 
+			{
+                new_game();
+            }
+            room_goto(rm_level_select);
+            break;
+		case "load_game":
+			if (file_exists("savedata.sav"))
+			{
+				with(obj_game_controller) 
+				{
+					load_game();
+				}
+			}
+            room_goto(rm_level_select);
             break;
     }
 }
