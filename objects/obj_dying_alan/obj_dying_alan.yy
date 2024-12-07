@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_game_over_controller",
+  "%Name":"obj_dying_alan",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_game_over_controller",
+  "name":"obj_dying_alan",
   "overriddenProperties":[],
   "parent":{
     "name":"Game Over",
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_alan_moving",
+    "path":"sprites/spr_alan_moving/spr_alan_moving.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
