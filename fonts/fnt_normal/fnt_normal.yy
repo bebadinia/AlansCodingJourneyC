@@ -112,7 +112,7 @@
   "hinting":0,
   "includeTTF":false,
   "interpreter":0,
-  "italic":false,
+  "italic":true,
   "kerningPairs":[],
   "last":0,
   "lineHeight":24,

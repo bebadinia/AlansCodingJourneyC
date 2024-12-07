@@ -1,9 +1,8 @@
 if (hovering && clicked)
 {
-	clicked = false;
-	
 	if (!expanded)
 	{
+		clicked = false;
 		// Create dark overlay first (so it's behind the detail panel)
 		instance_create_layer(0, 0, "UILayer", obj_dark_overlay);
 		
