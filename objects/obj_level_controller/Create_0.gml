@@ -9,14 +9,15 @@ backButton.backButton_type = "start";
 tutorialButton = instance_create_layer(260, 310, "UILayer", obj_level_button);
 tutorialButton.level_type = 0;
 tutorialButton.sprite_index = spr_tutorial_btn;
-tutorialButton.unlocked = true;
-tutorialButton.selected = true;
+tutorialButton.unlocked = false;
+tutorialButton.selected = false;
 
 //Create C button
 cButton = instance_create_layer(450, 310, "UILayer", obj_level_button);
 cButton.level_type = 1;
 cButton.sprite_index = spr_c_btn;
 cButton.unlocked = (global.highest_level >= 1);
+cButton.selected = true;
 
 
 //Create C++ button
