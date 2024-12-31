@@ -16,7 +16,7 @@ function new_game()
 {
     // Set default if no save exists
     globalvar highest_level;
-    global.highest_level = 1;  // Start with only tutorial unlocked
+    global.highest_level = 5;  // Start with only tutorial unlocked
 }
     
 // Initialize other variables (not saved)

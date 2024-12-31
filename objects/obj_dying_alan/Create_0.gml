@@ -6,7 +6,5 @@ image_yscale = 1.5;
 animation_stage = 0;
 timer = 0;
 
-// No need for Step Event as we just want the running animation
-
 // Draw Event
 draw_self();

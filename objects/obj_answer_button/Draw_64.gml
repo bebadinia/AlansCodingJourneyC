@@ -7,6 +7,6 @@ draw_set_color(c_white);
 
 
 //draw_text(x, y, text);
-draw_text_ext(x, y, text, 20, 195);
+draw_text_ext(x, y, text, 20, 280);
 
 

@@ -47,8 +47,8 @@ questions[1, 3] = // Third encounter
 //C++ Level
 questions[2, 1] = // First encounter
 [  
-    "C++ Encounter 1 Question 1",  // First variant
-    "C++ Encounter 1 Question 2"  // Second variant
+    "Which is the correct way to check if a number 'x' is between 1 and 10?",  // First variant
+    "Which is the correct way to check if a number 'y' is less than 13 OR greater than 19?"  // Second variant
 ];
 questions[2, 2] = // Second encounter
 [  
@@ -65,8 +65,8 @@ questions[2, 3] = // Third encounter
 //Python Level
 questions[3, 1] = // First encounter
 [  
-    "Python Encounter 1 Question 1",  // First variant
-    "Python Encounter 1 Question 2"  // Second variant
+    "Which is the correct way to print numbers from 1 to 5 using a For-Loop in Python?",  // First variant
+    "Which is the correct way to repeat an action 3 times using a For-Loop in Python?"  // Second variant
 ];
 questions[3, 2] = // Second encounter
 [  
@@ -83,8 +83,8 @@ questions[3, 3] = // Third encounter
 //Java Level
 questions[4, 1] = // First encounter
 [  
-    "Java Encounter 1 Question 1",  // First variant
-    "Java Encounter 1 Question 2"  // Second variant
+    "Which is the correct way to create a function that adds two numbers?",  // First variant
+    "Which is the correct way to create a function that returns a String?"  // Second variant
 ];
 questions[4, 2] = // Second encounter
 [  
@@ -96,8 +96,6 @@ questions[4, 3] = // Third encounter
     "Java Encounter 3 Question 1",  // First variant
     "Java Encounter 3 Question 2" // Second variant
 ];
-
-
 
 question_text = questions[global.current_level, global.current_encounter][question_number - 1];
 

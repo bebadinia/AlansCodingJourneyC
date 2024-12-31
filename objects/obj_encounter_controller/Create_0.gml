@@ -8,16 +8,16 @@ question = instance_create_layer(640, 75, "UILayer", obj_question_panel);
 
 // Create three buttons using your existing button object
 button1 = instance_create_layer(185, 306, "UILayer", obj_answer_button);
-button1.image_xscale = 1.152381;
-button1.image_yscale = 1.316832;
+button1.image_xscale = 1.5; //1.152381
+button1.image_yscale = 1.5; //1.316832
 
 button2 = instance_create_layer(640, 306, "UILayer", obj_answer_button);
-button2.image_xscale = 1.152381;
-button2.image_yscale = 1.316832;
+button2.image_xscale = 1.5;
+button2.image_yscale = 1.5;
 
 button3 = instance_create_layer(1095, 306, "UILayer", obj_answer_button);
-button3.image_xscale = 1.152381;
-button3.image_yscale = 1.316832;
+button3.image_xscale = 1.5;
+button3.image_yscale = 1.5;
 
 
 // Arrays to store all answers
@@ -115,14 +115,14 @@ answers[1, 3] = //Third encounter
 answers[2, 1] = //First encounter
 [ 
     [ // First variant answers
-        ["C++ E1V1 True", true],
-        ["C++ E1V1 False", false],
-        ["C++ E1V1 False", false]
+        ["if (x > 1 && x < 10)", true],
+        ["if (x > 1 AND x < 10)", false],
+        ["if (1 < x < 10)", false]
     ],
     [ // Second variant answers
-        ["C++ E1V2 False", false],
-        ["C++ E1V2 True", true],
-        ["C++ E1V2 False", false]
+        ["if (age < 13 OR age > 19)", false],
+        ["if (age < 13 || age > 19)", true],
+        ["if (age != 13-19)", false]
     ]
 ];
 
@@ -160,14 +160,14 @@ answers[2, 3] = //Third encounter
 answers[3, 1] = //First encounter
 [ 
     [ // First variant answers
-        ["Python E1V1 True", true],
-        ["Python E1V1 False", false],
-        ["Python E1V1 False", false]
+        ["for i in range(1, 6):", true],
+        ["for i = 1 to 5:", false],
+        ["for i in (1, 5):", false]
     ],
     [ // Second variant answers
-        ["Python E1V2 False", false],
-        ["Python E1V2 True", true],
-        ["Python E1V2 False", false]
+        ["repeat(3):", false],
+        ["for i in range(3):", true],
+        ["for times in 3:", false]
     ]
 ];
 
@@ -205,14 +205,14 @@ answers[3, 3] = //Third encounter
 answers[4, 1] = //First encounter
 [ 
     [ // First variant answers
-        ["Java E1V1 True", true],
-        ["Java E1V1 False", false],
-        ["Java E1V1 False", false]
+        ["public int add(int a, int b)\n{return a + b;}", true],
+        ["function add(a, b)\n{return a + b;}", false],
+        ["void add(int a, int b)\n{a + b;}", false]
     ],
     [ // Second variant answers
-        ["Java E1V2 False", false],
-        ["Java E1V2 True", true],
-        ["Java E1V2 False", false]
+        ["String getMessage\n{return \"Hello\";}", false],
+        ["public String getMessage()\n{return \"Hello\";}", true],
+        ["void String getMessage()\n{\"Hello\";}", false]
     ]
 ];
 
