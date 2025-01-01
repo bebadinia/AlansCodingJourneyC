@@ -2,100 +2,80 @@
 image_alpha = 1;
 fading = false;
 
-//globalvar question_number;
+
 randomize();
-question_number = irandom_range(1, 2);  // Random number between 1 and 2
+variation = irandom_range(1, 3);  // Random number between 1 and 3
 
 
 // Question data structure
-// Tutorial Level
-questions[0, 1] = // First encounter
+
+//Level 1
+// Level 1, Section 0: Introduction and Main
+questions[0, 0] = 
 [  
-    "Which is the correct way to declare and initialize a variable called x with integer 10?",  // First variant
-    "Which is the correct way to declare and initialize a variable called y with character 'b'?"  // Second variant
+	[	// First Question
+		"How many bytes are in a KB?", // First variant
+		"How many bytes are in a MB?", // Second variant
+		"How many bytes are in a GB?" // Third variant
+	],
+	[	// Second Question
+		"What part of a computer manipulates and stores data?", // First variant
+		"What part of a computer processes data?", // Second variant
+		"What part of a computer receives input?" // Third variant
+	],
+	[	// Third Question
+		"The third phase of software engineering that we are focusing on is _______.", // First variant
+		"The physical parts of the computer are called _______.", // Second variant
+		"What type of language is C?" // Third variant
+	],
+	[	// Fourth Question
+		"How many bits are in a byte?", // First variant
+		"When running, every C program has and starts executing at the _______.", // Second variant
+		"What part of a computer presents output?" // Third variant
+	]
 ];
-questions[0, 2] = // Second encounter
+
+// Level 1, Section 1: Variables and Expressions
+questions[0, 1] = 
 [  
-    "Which is the correct way to declare and initialize a string called 'welcome' with the phrase \"Hello World\"?",  // First variant
-    "Which is the correct way to declare and initialize a string called 'name' with the phrase \"Ben\"?"  // Second variant
+	[	// First Question
+		"In C, the syntax to declare an integer variable called x is", // First variant
+		"In C, the syntax to declare a decimal variable called num is", // Second variant
+		"In C, the syntax to declare a character variable called c is" // Third variant
+	],
+	[	// Second Question
+		"Which header file should be included to get access to input and output functions?", // First variant
+		"Which is the C command to show text on the screen/monitor?", // Second variant
+		"What place holder in a format string will print out a double/decimal value?" // Third variant
+	],
+	[	// Third Question
+		"In order to read in and manipulate data, we need ___ to store values.", // First variant
+		"Each statement in a C program should end with what?", // Second variant
+		"Which statement is a complete assignment of an integer value to a variable called x?" // Third variant
+	]
 ];
-questions[0, 3] = // Third encounter 
+
+// Level 1, Section 2: Input and Operations
+questions[0, 2] = 
 [  
-    "Which is the correct way to print the message 'Hello World' to the screen?",  // First variant
-    "Which is the correct way to print the number 5 to the screen?"  // Second variant
+	[	// First Question
+		"In programming, what is the highest order of operations?", // First variant
+		"In programming, what is the lowest order of operations?", // Second variant
+		"What does this expression evaluate to? \n 4 * 3 / 6 - 5 % 3 + 1" // Third variant
+	],
+	[	// Second Question
+		"Which line reads an integer into a variable?", // First variant
+		"Fill in the blank to read a decimal number into a variable: scanf(\"&__\",&number);", // Second variant
+		"The scanf command reads up to the _______." // Third variant
+	],
+	[	// Third Question
+		"In programming, what side of an assignment is evaluated first?", // First variant
+		"What is one acronym for programming order of operations?", // Second variant
+		"In a C expression, what is %?" // Third variant
+	]
 ];
 
 
-//C Level
-questions[1, 1] = // First encounter
-[  
-    "Which is the correct way to declare and initialize a variable called x with integer 10?",  // First variant
-    "Which is the correct way to declare and initialize a variable called y with character 'b'?"  // Second variant
-];
-questions[1, 2] = // Second encounter
-[  
-    "Which is the correct way to declare and initialize a string called 'welcome' with the phrase \"Hello World\"?",  // First variant
-    "Which is the correct way to declare and initialize a string called 'name' with the phrase \"Ben\"?"  // Second variant
-];
-questions[1, 3] = // Third encounter 
-[  
-    "Which is the correct way to print the message 'Hello World' to the screen?",  // First variant
-    "Which is the correct way to print the number '5' to the screen?"  // Second variant
-];
-
-
-//C++ Level
-questions[2, 1] = // First encounter
-[  
-    "Which is the correct way to check if a number 'x' is between 1 and 10?",  // First variant
-    "Which is the correct way to check if a number 'y' is less than 13 OR greater than 19?"  // Second variant
-];
-questions[2, 2] = // Second encounter
-[  
-    "C++ Encounter 2 Question 1",  // First variant
-    "C++ Encounter 2 Question 2"  // Second variant
-];
-questions[2, 3] = // Third encounter 
-[  
-    "C++ Encounter 3 Question 1",  // First variant
-    "C++ Encounter 3 Question 2" // Second variant
-];
-
-
-//Python Level
-questions[3, 1] = // First encounter
-[  
-    "Which is the correct way to print numbers from 1 to 5 using a For-Loop in Python?",  // First variant
-    "Which is the correct way to repeat an action 3 times using a For-Loop in Python?"  // Second variant
-];
-questions[3, 2] = // Second encounter
-[  
-    "Python Encounter 2 Question 1",  // First variant
-    "Python Encounter 2 Question 2"  // Second variant
-];
-questions[3, 3] = // Third encounter 
-[  
-    "Python Encounter 3 Question 1",  // First variant
-    "Python Encounter 3 Question 2" // Second variant
-];
-
-
-//Java Level
-questions[4, 1] = // First encounter
-[  
-    "Which is the correct way to create a function that adds two numbers?",  // First variant
-    "Which is the correct way to create a function that returns a String?"  // Second variant
-];
-questions[4, 2] = // Second encounter
-[  
-    "Java Encounter 2 Question 1",  // First variant
-    "Java Encounter 2 Question 2"  // Second variant
-];
-questions[4, 3] = // Third encounter 
-[  
-    "Java Encounter 3 Question 1",  // First variant
-    "Java Encounter 3 Question 2" // Second variant
-];
 
 question_text = questions[global.current_level, global.current_encounter][question_number - 1];
 

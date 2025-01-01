@@ -1,4 +1,9 @@
 // Create Event of obj_game_controller
+// Level information - What sections are in each level
+level_sections[0] = ["Introduction and Main", "Variables and Expressions", "Input and Operations"];
+level_sections[1] = ["Conditionals", "Functions", "Loops"];
+level_sections[2] = ["Arrays", "Strings - Character Arrays", "Addresses and Pointers"];
+level_sections[3] = ["Enumerate and Structures", "File Input and Output", "Object Oriented Programming"];
 
 // Initialize global variables    
 // Load saved highest level if it exists
@@ -16,7 +21,7 @@ function new_game()
 {
     // Set default if no save exists
     globalvar highest_level;
-    global.highest_level = 5;  // Start with only tutorial unlocked
+    global.highest_level = 1;  // Start with only tutorial unlocked
 }
     
 // Initialize other variables (not saved)
@@ -24,6 +29,11 @@ globalvar current_encounter, can_move, current_level;
 global.current_encounter = 1;  // Always start at first encounter
 global.current_level = 0;  // 0=tutorial, 1=C, 2=C++, 3=Python, 4=Java
 can_move = true;  // Will be set to false in encounter rooms
+
+// Which section within level (0-2) and Which question we're on in current section
+globalvar current_section, question_in_section;
+global.current_section = 0;      // Start with first section
+global.question_in_section = 0;  // Start with first question in section
 
 
 // Create a save function

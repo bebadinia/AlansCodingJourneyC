@@ -21,231 +21,205 @@ button3.image_yscale = 1.5;
 
 
 // Arrays to store all answers
-// Tutorial Level
-answers[0, 1] = //First encounter
+
+//Level 1
+// Level 1, Section 0: Introduction and Main
+answers[0, 0] = 
 [ 
-    [ // First variant answers
-        ["int x = 10;", true],
-        ["Int x = 10;", false],
-        ["INT x = 10;", false]
-    ],
-    [ // Second variant answers
-        ["char y = b;", false],
-        ["char y = 'b';", true],
-        ["char b = 'y';", false]
-    ]
+	//First Question
+	[
+	    [	// Answers for First variant
+			["1,000 bytes", true], // First Answer Choice
+			["1,000,000 bytes", false], // Second Answer Choice
+			["1,000,000,000 bytes", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["1,000 bytes", false], // First Answer Choice
+			["1,000,000 bytes", true], // Second Answer Choice
+			["1,000,000,000 bytes", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["1,000 bytes", false], // First Answer Choice
+			["1,000,000 bytes", false], // Second Answer Choice
+			["1,000,000,000 bytes", true] // Third Answer Choice
+		]
+	],
+	//Second Question
+	[
+	    [	// Answers for First variant
+			["Hard Drive", true], // First Answer Choice
+			["CPU", false], // Second Answer Choice
+			["Keyboard", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["Hard Drive", false], // First Answer Choice
+			["CPU", true], // Second Answer Choice
+			["Keyboard", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["Hard Drive", false], // First Answer Choice
+			["CPU", false], // Second Answer Choice
+			["Keyboard", true] // Third Answer Choice
+		]
+	],
+	//Third Question
+	[
+	    [	// Answers for First variant
+			["Coding", true], // First Answer Choice
+			["Analyzing", false], // Second Answer Choice
+			["Designing", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["Software", false], // First Answer Choice
+			["Hardware", true], // Second Answer Choice
+			["Computer Parts", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["Beginner ", false], // First Answer Choice
+			["Case-Insensitive", false], // Second Answer Choice
+			["Case-Sensitive", true] // Third Answer Choice
+		]
+	],
+	//Fourth Question
+	[
+	    [	// Answers for First variant
+			["8 bits", true], // First Answer Choice
+			["2 bits", false], // Second Answer Choice
+			["1 bit", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["First Include", false], // First Answer Choice
+			["Main Function", true], // Second Answer Choice
+			["First Comment", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["CPU", false], // First Answer Choice
+			["Mouse", false], // Second Answer Choice
+			["Monitor", true] // Third Answer Choice
+		]
+	]
 ];
 
-answers[0, 2] = //Second encounter
+// Level 1, Section 1:  Variables and Expressions
+answers[0, 1] = 
 [ 
-    [ // First variant answers
-        ["char welcome[] = Hello World", false],
-        ["welcome[] = \"Hello World\";", false],
-        ["char welcome[] = \"Hello World\";", true]
-    ],
-    [ // Second variant answers
-        ["char name[] = \"Ben\";", true],
-        ["char name = \"Ben\";", false],
-        ["name = \"Ben\";", false]
-    ]
+	//First Question
+	[
+	    [	// Answers for First variant
+			["int x;", true], // First Answer Choice
+			["num x;", false], // Second Answer Choice
+			["var x;", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["int num;", false], // First Answer Choice
+			["double num;", true], // Second Answer Choice
+			["decimal num;", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["letter c;", false], // First Answer Choice
+			["character c;", false], // Second Answer Choice
+			["char c;", true] // Third Answer Choice
+		]
+	],
+	//Second Question
+	[
+	    [	// Answers for First variant
+			["stdio.h", true], // First Answer Choice
+			["math.h", false], // Second Answer Choice
+			["memory.h", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["print", false], // First Answer Choice
+			["printf", true], // Second Answer Choice
+			["cout", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["%d", false], // First Answer Choice
+			["%i", false], // Second Answer Choice
+			["%lf", true] // Third Answer Choice
+		]
+	],
+	//Third Question
+	[
+	    [	// Answers for First variant
+			["variables", true], // First Answer Choice
+			["numbers", false], // Second Answer Choice
+			["words", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["Period (.)", false], // First Answer Choice
+			["Semicolon (;)", true], // Second Answer Choice
+			["Colon (:)", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["x = 100.1;", false], // First Answer Choice
+			["x = ‘100’;", false], // Second Answer Choice
+			["x = 100;", true] // Third Answer Choice
+		]
+	]
 ];
 
-answers[0, 3] = //Third encounter
+// Level 1, Section 2:  Input and Operations
+answers[0, 2] = 
 [ 
-    [ // First variant answers
-        ["print(\"Hello World\");", false],
-        ["printf(\"Hello World\");", true],
-        ["printf(Hello World);", false]
-    ],
-    [ // Second variant answers
-        ["printf(\"%c\", 5);", false],
-        ["printf(5);", false],
-        ["printf(\"%d\", 5);", true]
-    ]
-];
-
-
-
-// C Level
-answers[1, 1] = //First encounter
-[ 
-    [ // First variant answers
-        ["int x = 10;", true],
-        ["Int x = 10;", false],
-        ["INT x = 10;", false]
-    ],
-    [ // Second variant answers
-        ["char y = b;", false],
-        ["char y = 'b';", true],
-        ["char b = 'y';", false]
-    ]
-];
-
-answers[1, 2] = //Second encounter
-[ 
-    [ // First variant answers
-        ["char welcome[] = Hello World", false],
-        ["welcome[] = \"Hello World\";", false],
-        ["char welcome[] = \"Hello World\";", true]
-    ],
-    [ // Second variant answers
-        ["char name[] = \"Ben\";", true],
-        ["char name = \"Ben\";", false],
-        ["name = \"Ben\";", false]
-    ]
-];
-
-answers[1, 3] = //Third encounter
-[ 
-    [ // First variant answers
-        ["print(\"Hello World\");", false],
-        ["printf(\"Hello World\");", true],
-        ["printf(Hello World);", false]
-    ],
-    [ // Second variant answers
-        ["printf(\"%c\", 5);", false],
-        ["printf(5);", false],
-        ["printf(\"%d\", 5);", true]
-    ]
-];
-
-
-
-// C++ Level
-answers[2, 1] = //First encounter
-[ 
-    [ // First variant answers
-        ["if (x > 1 && x < 10)", true],
-        ["if (x > 1 AND x < 10)", false],
-        ["if (1 < x < 10)", false]
-    ],
-    [ // Second variant answers
-        ["if (age < 13 OR age > 19)", false],
-        ["if (age < 13 || age > 19)", true],
-        ["if (age != 13-19)", false]
-    ]
-];
-
-answers[2, 2] = //Second encounter
-[ 
-    [ // First variant answers
-        ["C++ E2V1 False", false],
-        ["C++ E2V1 False", false],
-        ["C++ E2V1 True", true]
-    ],
-    [ // Second variant answers
-        ["C++ E2V2 True", true],
-        ["C++ E2V2 False", false],
-        ["C++ E2V2 False", false]
-    ]
-];
-
-answers[2, 3] = //Third encounter
-[ 
-    [ // First variant answers
-        ["C++ E3V1 False", false],
-        ["C++ E3V1 True", true],
-        ["C++ E3V1 False", false]
-    ],
-    [ // Second variant answers
-        ["C++ E3V2 False", false],
-        ["C++ E3V2 False", false],
-        ["C++ E3V2 True", true]
-    ]
-];
-
-
-
-// Python Level
-answers[3, 1] = //First encounter
-[ 
-    [ // First variant answers
-        ["for i in range(1, 6):", true],
-        ["for i = 1 to 5:", false],
-        ["for i in (1, 5):", false]
-    ],
-    [ // Second variant answers
-        ["repeat(3):", false],
-        ["for i in range(3):", true],
-        ["for times in 3:", false]
-    ]
-];
-
-answers[3, 2] = //Second encounter
-[ 
-    [ // First variant answers
-        ["Python E2V1 False", false],
-        ["Python E2V1 False", false],
-        ["Python E2V1 True", true]
-    ],
-    [ // Second variant answers
-        ["Python E2V2 True", true],
-        ["Python E2V2 False", false],
-        ["Python E2V2 False", false]
-    ]
-];
-
-answers[3, 3] = //Third encounter
-[ 
-    [ // First variant answers
-        ["Python E3V1 False", false],
-        ["Python E3V1 True", true],
-        ["Python E3V1 False", false]
-    ],
-    [ // Second variant answers
-        ["Python E3V2 False", false],
-        ["Python E3V2 False", false],
-        ["Python E3V2 True", true]
-    ]
-];
-
-
-
-// Java Level
-answers[4, 1] = //First encounter
-[ 
-    [ // First variant answers
-        ["public int add(int a, int b)\n{return a + b;}", true],
-        ["function add(a, b)\n{return a + b;}", false],
-        ["void add(int a, int b)\n{a + b;}", false]
-    ],
-    [ // Second variant answers
-        ["String getMessage\n{return \"Hello\";}", false],
-        ["public String getMessage()\n{return \"Hello\";}", true],
-        ["void String getMessage()\n{\"Hello\";}", false]
-    ]
-];
-
-answers[4, 2] = //Second encounter
-[ 
-    [ // First variant answers
-        ["Java E2V1 False", false],
-        ["Java E2V1 False", false],
-        ["Java E2V1 True", true]
-    ],
-    [ // Second variant answers
-        ["Java E2V2 True", true],
-        ["Java E2V2 False", false],
-        ["Java E2V2 False", false]
-    ]
-];
-
-answers[4, 3] = //Third encounter
-[ 
-    [ // First variant answers
-        ["Java E3V1 False", false],
-        ["Java E3V1 True", true],
-        ["Java E3V1 False", false]
-    ],
-    [ // Second variant answers
-        ["Java E3V2 False", false],
-        ["Java E3V2 False", false],
-        ["Java E3V2 True", true]
-    ]
+	//First Question
+	[
+	    [	// Answers for First variant
+			["Groupings", true], // First Answer Choice
+			["Addition and Subtraction", false], // Second Answer Choice
+			["Powers and Functions", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["Groupings", false], // First Answer Choice
+			["Addition and Subtraction", true], // Second Answer Choice
+			["Powers and Functions", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["5", false], // First Answer Choice
+			["0", false], // Second Answer Choice
+			["1", true] // Third Answer Choice
+		]
+	],
+	//Second Question
+	[
+	    [	// Answers for First variant
+			["scanf(\"%d\", &i);", true], // First Answer Choice
+			["scanf(\"%lf\", &num);", false], // Second Answer Choice
+			["scanf(\"%c\", &letter);", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["int", false], // First Answer Choice
+			["lf", true], // Second Answer Choice
+			["d", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["End of the Sentence", false], // First Answer Choice
+			["First Semicolon", false], // Second Answer Choice
+			["First White Space", true] // Third Answer Choice
+		]
+	],
+	//Third Question
+	[
+	    [	// Answers for First variant
+			["Right", true], // First Answer Choice
+			["Left", false], // Second Answer Choice
+			["Middle", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["MEGS", false], // First Answer Choice
+			["GEMS", true], // Second Answer Choice
+			["SDLC", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["Division", false], // First Answer Choice
+			["Multiplication", false], // Second Answer Choice
+			["Modulus", true] // Third Answer Choice
+		]
+	]
 ];
 
 
-// Set Up Quetions
+// Set Up Answers
 var current_answers = answers[global.current_level, global.current_encounter][question.question_number - 1];
 
 button1.text = current_answers[0][0];
