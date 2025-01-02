@@ -77,5 +77,5 @@ questions[0, 2] =
 
 
 
-question_text = questions[global.current_level, global.current_encounter][question_number - 1];
+question_text = questions[global.current_level - 1, global.current_section][global.question_in_section][variation - 1];
 

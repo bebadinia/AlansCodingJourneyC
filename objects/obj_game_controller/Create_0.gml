@@ -35,6 +35,10 @@ globalvar current_section, question_in_section;
 global.current_section = 0;      // Start with first section
 global.question_in_section = 0;  // Start with first question in section
 
+//Store number of questions in section
+globalvar number_of_questions;
+global.number_of_questions = 0;
+
 
 // Create a save function
 function save_game() 

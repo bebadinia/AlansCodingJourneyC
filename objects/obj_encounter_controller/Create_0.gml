@@ -5,6 +5,8 @@ global.can_move = false;
 
 // Create question panel first (using your existing question panel object)
 question = instance_create_layer(640, 75, "UILayer", obj_question_panel);
+global.number_of_questions = array_length(obj_question_panel.questions[global.current_level-1, global.current_section]); //Set number of questions for each section
+show_debug_message("Number of questions: " + string(global.number_of_questions));
 
 // Create three buttons using your existing button object
 button1 = instance_create_layer(185, 306, "UILayer", obj_answer_button);
@@ -220,7 +222,7 @@ answers[0, 2] =
 
 
 // Set Up Answers
-var current_answers = answers[global.current_level, global.current_encounter][question.question_number - 1];
+var current_answers = answers[global.current_level - 1, global.current_section][global.question_in_section][question.variation - 1];
 
 button1.text = current_answers[0][0];
 button1.is_correct = current_answers[0][1];
