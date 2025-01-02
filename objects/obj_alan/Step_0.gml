@@ -183,23 +183,35 @@ if (global.can_move)
 				break;
             
 	        case rm_python_encounter:
-	            if (global.current_encounter < 3) 
+	           if ((global.question_in_section + 1) < global.number_of_questions) 
 				{
-	                global.current_encounter++;
-					show_debug_message("Incrementing encounter to " + string(global.current_encounter));
-	                room_goto(rm_python_learn);
-					
+	                global.question_in_section++;
+					show_debug_message("Incrementing question to " + string(global.question_in_section + 1));
+	                room_goto(rm_python_encounter);
 	            } 
 				else 
 				{
-	                // Level complete
-	                global.current_encounter = 1;  // Reset for next time
+	                // Section complete
 					
-					with(obj_heart_controller) 
+					if(global.current_section < 2) // If level is not complete
 					{
-						current_hearts = max_hearts;
+						global.current_section++;  // Increment Section
+						global.question_in_section = 0;
+						//global.number_of_questions = 0;
+						show_debug_message("Incrementing section to " + string(global.current_section));
+						room_goto(rm_python_learn); // Go to next learn page
 					}
-	                room_goto(rm_level_complete);
+					else // Go to next level
+					{
+						global.current_section = 0;
+						global.question_in_section = 0;
+						global.number_of_questions = 0;
+						with(obj_heart_controller) 
+						{
+							current_hearts = max_hearts;
+						}
+						room_goto(rm_level_complete);
+					}
 	            }
 	            break;
 				
@@ -210,23 +222,35 @@ if (global.can_move)
 				break;
             
 	        case rm_cpp_encounter: 
-	            if (global.current_encounter < 3) 
+	           if ((global.question_in_section + 1) < global.number_of_questions) 
 				{
-	                global.current_encounter++;
-					show_debug_message("Incrementing encounter to " + string(global.current_encounter));
-	                room_goto(rm_cpp_learn);
-					
+	                global.question_in_section++;
+					show_debug_message("Incrementing question to " + string(global.question_in_section + 1));
+	                room_goto(rm_cpp_encounter);
 	            } 
 				else 
 				{
-	                // Level complete
-	                global.current_encounter = 1;  // Reset for next time
+	                // Section complete
 					
-					with(obj_heart_controller) 
+					if(global.current_section < 2) // If level is not complete
 					{
-						current_hearts = max_hearts;
+						global.current_section++;  // Increment Section
+						global.question_in_section = 0;
+						//global.number_of_questions = 0;
+						show_debug_message("Incrementing section to " + string(global.current_section));
+						room_goto(rm_cpp_learn); // Go to next learn page
 					}
-	                room_goto(rm_level_complete);
+					else // Go to next level
+					{
+						global.current_section = 0;
+						global.question_in_section = 0;
+						global.number_of_questions = 0;
+						with(obj_heart_controller) 
+						{
+							current_hearts = max_hearts;
+						}
+						room_goto(rm_level_complete);
+					}
 	            }
 	            break;
 				
@@ -237,23 +261,35 @@ if (global.can_move)
 				break;
             
 	        case rm_java_encounter: 
-	            if (global.current_encounter < 3) 
+	            if ((global.question_in_section + 1) < global.number_of_questions) 
 				{
-	                global.current_encounter++;
-					show_debug_message("Incrementing encounter to " + string(global.current_encounter));
-	                room_goto(rm_java_learn);
-					
+	                global.question_in_section++;
+					show_debug_message("Incrementing question to " + string(global.question_in_section + 1));
+	                room_goto(rm_java_encounter);
 	            } 
 				else 
 				{
-	                // Level complete
-	                global.current_encounter = 1;  // Reset for next time
+	                // Section complete
 					
-					with(obj_heart_controller) 
+					if(global.current_section < 2) // If level is not complete
 					{
-						current_hearts = max_hearts;
+						global.current_section++;  // Increment Section
+						global.question_in_section = 0;
+						//global.number_of_questions = 0;
+						show_debug_message("Incrementing section to " + string(global.current_section));
+						room_goto(rm_java_learn); // Go to next learn page
 					}
-	                room_goto(rm_level_complete);
+					else // Go to next level
+					{
+						global.current_section = 0;
+						global.question_in_section = 0;
+						global.number_of_questions = 0;
+						with(obj_heart_controller) 
+						{
+							current_hearts = max_hearts;
+						}
+						room_goto(rm_level_complete);
+					}
 	            }
 	            break;
 		}

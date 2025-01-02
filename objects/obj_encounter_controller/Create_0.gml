@@ -221,6 +221,434 @@ answers[0, 2] =
 ];
 
 
+//Level 2
+// Level 2, Section 0: Conditionals
+answers[1, 0] = 
+[ 
+	//First Question
+	[
+	    [	// Answers for First variant
+			["&&", true], // First Answer Choice
+			["!", false], // Second Answer Choice
+			["||", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["&&", false], // First Answer Choice
+			["!", true], // Second Answer Choice
+			["||", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["&&", false], // First Answer Choice
+			["!", false], // Second Answer Choice
+			["||", true] // Third Answer Choice
+		]
+	],
+	//Second Question
+	[
+	    [	// Answers for First variant
+			["1", true], // First Answer Choice
+			["0", false], // Second Answer Choice
+			["-1", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["1", false], // First Answer Choice
+			["0", true], // Second Answer Choice
+			["-1", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["if-else", false], // First Answer Choice
+			["switch", false], // Second Answer Choice
+			["printf", true] // Third Answer Choice
+		]
+	],
+	//Third Question
+	[
+	    [	// Answers for First variant
+			["Multiple", true], // First Answer Choice
+			["One", false], // Second Answer Choice
+			["None", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["double", false], // First Answer Choice
+			["character", true], // Second Answer Choice
+			["float", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["// (Double Slashes)", false], // First Answer Choice
+			["() (Parenthesis)", false], // Second Answer Choice
+			["{} (Curly Braces)", true] // Third Answer Choice
+		]
+	]
+];
+
+// Level 2, Section 1: Functions
+answers[1, 1] = 
+[ 
+	//First Question
+	[
+	    [	// Answers for First variant
+			["One", true], // First Answer Choice
+			["Many", false], // Second Answer Choice
+			["None", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["One", false], // First Answer Choice
+			["Many", true], // Second Answer Choice
+			["None", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["Conditional", false], // First Answer Choice
+			["Variable", false], // Second Answer Choice
+			["Function", true] // Third Answer Choice
+		]
+	],
+	//Second Question
+	[
+	    [	// Answers for First variant
+			["Above Main", true], // First Answer Choice
+			["Beneath Main", false], // Second Answer Choice
+			["Anywhere in Main", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["Four", false], // First Answer Choice
+			["Three", true], // Second Answer Choice
+			["One", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["Square", false], // First Answer Choice
+			["Variable", false], // Second Answer Choice
+			["Double", true] // Third Answer Choice
+		]
+	]
+];
+
+// Level 2, Section 2: Loops
+answers[1, 2] = 
+[ 
+	//First Question
+	[
+	    [	// Answers for First variant
+			["when some code will be run multiple times", true], // First Answer Choice
+			["in the beginning of programs", false], // Second Answer Choice
+			["at the end of programs", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["do-while", false], // First Answer Choice
+			["do-until", true], // Second Answer Choice
+			["while", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["Even", false], // First Answer Choice
+			["False", false], // Second Answer Choice
+			["True", true] // Third Answer Choice
+		]
+	],
+	//Second Question
+	[
+	    [	// Answers for First variant
+			["do-while", true], // First Answer Choice
+			["while", false], // Second Answer Choice
+			["for", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["do-while", false], // First Answer Choice
+			["while", true], // Second Answer Choice
+			["for", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["do-while", false], // First Answer Choice
+			["while", false], // Second Answer Choice
+			["for", true] // Third Answer Choice
+		]
+	],
+	//Third Question
+	[
+	    [	// Answers for First variant
+			["for (n=1; n<11; n++)\n   printf (\"hi\");", true], // First Answer Choice
+			["while (n < 10)\n    n = n + 1;", false], // Second Answer Choice
+			["for (n=0; n<=10; n++)\n   printf (\"bye\");", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["always needed", false], // First Answer Choice
+			["to execute multiple commands", true], // Second Answer Choice
+			["to run just once", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["verify; check; modify", false], // First Answer Choice
+			["start; condition; end", false], // Second Answer Choice
+			["initialize; condition; increment", true] // Third Answer Choice
+		]
+	]
+];
+
+
+//Level 3
+// Level 3, Section 0: Arrays
+answers[2, 0] = 
+[ 
+	//First Question
+	[
+	    [	// Answers for First variant
+			["4", true], // First Answer Choice
+			["37", false], // Second Answer Choice
+			["2000", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["1", false], // First Answer Choice
+			["0", true], // Second Answer Choice
+			["-1", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["4", false], // First Answer Choice
+			["37", false], // Second Answer Choice
+			["2000", true] // Third Answer Choice
+		]
+	],
+	//Second Question
+	[
+	    [	// Answers for First variant
+			["for", true], // First Answer Choice
+			["while", false], // Second Answer Choice
+			["do-while", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["{} (Curly Braces)", false], // First Answer Choice
+			["[] (Brackets)", true], // Second Answer Choice
+			["() (Parenthesis)", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["val", false], // First Answer Choice
+			["int", false], // Second Answer Choice
+			["3", true] // Third Answer Choice
+		]
+	],
+	//Third Question
+	[
+	    [	// Answers for First variant
+			["char", true], // First Answer Choice
+			["array", false], // Second Answer Choice
+			["int", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["arrayName[50][double];", false], // First Answer Choice
+			["double arrayName[50];", true], // Second Answer Choice
+			["arrayName[50] = double;", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["number int[7];", false], // First Answer Choice
+			["int[7] numbers;", false], // Second Answer Choice
+			["int numbers[7];", true] // Third Answer Choice
+		]
+	]
+];
+
+// Level 3, Section 1: Strings
+answers[2, 1] = 
+[ 
+	//First Question
+	[
+	    [	// Answers for First variant
+			["\\0", true], // First Answer Choice
+			["\\n", false], // Second Answer Choice
+			["\"", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["char", false], // First Answer Choice
+			["string", true], // Second Answer Choice
+			["function", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["123", false], // First Answer Choice
+			["'123'", false], // Second Answer Choice
+			["\"123\"", true] // Third Answer Choice
+		]
+	],
+	//Second Question
+	[
+	    [	// Answers for First variant
+			["\"\" (Double Quotes)", true], // First Answer Choice
+			["() (Parenthesis)", false], // Second Answer Choice
+			["'' (Single Quotes)", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["stdio.h", false], // First Answer Choice
+			["string.h", true], // Second Answer Choice
+			["stdin.h", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["strlen", false], // First Answer Choice
+			["strcat", false], // Second Answer Choice
+			["strcmp", true] // Third Answer Choice
+		]
+	],
+	//Third Question
+	[
+	    [	// Answers for First variant
+			["strlen", true], // First Answer Choice
+			["strcat", false], // Second Answer Choice
+			["strcmp", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["strlen", false], // First Answer Choice
+			["strcat", true], // Second Answer Choice
+			["strcmp", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["strncpy", false], // First Answer Choice
+			["strcmp", false], // Second Answer Choice
+			["strcpy", true] // Third Answer Choice
+		]
+	],
+	//Fourth Question
+	[
+	    [	// Answers for First variant
+			["strncpy", true], // First Answer Choice
+			["strcmp", false], // Second Answer Choice
+			["strcpy", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["12", false], // First Answer Choice
+			["11", true], // Second Answer Choice
+			["10", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["1", false], // First Answer Choice
+			["-1", false], // Second Answer Choice
+			["0", true] // Third Answer Choice
+		]
+	]
+];
+
+// Level 3, Section 2: Addresses/Pointers
+answers[2, 2] = 
+[ 
+	//First Question
+	[
+	    [	// Answers for First variant
+			["* (Asterisk)", true], // First Answer Choice
+			["& (Ampersand)", false], // Second Answer Choice
+			["% (Modulus)", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["* (Asterisk)", false], // First Answer Choice
+			["& (Ampersand)", true], // Second Answer Choice
+			["% (Modulus)", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["File Path", false], // First Answer Choice
+			["Location on Desktop", false], // Second Answer Choice
+			["Location in RAM", true] // Third Answer Choice
+		]
+	]
+];
+
+
+//Level 4
+// Level 4, Section 0: Enumerate and Structures
+answers[3, 0] = 
+[ 
+	//First Question
+	[
+	    [	// Answers for First variant
+			["enum", true], // First Answer Choice
+			["struct", false], // Second Answer Choice
+			["arr", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["* (Asterisk)", false], // First Answer Choice
+			[". (Period)", true], // Second Answer Choice
+			["& (Ampersand)", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["array (arr)", false], // First Answer Choice
+			["integer (int)", false], // Second Answer Choice
+			["structure (struct)", true] // Third Answer Choice
+		]
+	],
+	//Second Question
+	[
+	    [	// Answers for First variant
+			["True", true], // First Answer Choice
+			["False", false], // Second Answer Choice
+			["Maybe", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["True", false], // First Answer Choice
+			["False", true], // Second Answer Choice
+			["Maybe", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["True", true], // First Answer Choice
+			["False", false], // Second Answer Choice
+			["Maybe", false] // Third Answer Choice
+		]
+	]
+];
+
+// Level 4, Section 1: File Input and Output
+answers[3, 1] = 
+[ 
+	//First Question
+	[
+	    [	// Answers for First variant
+			["fopen", true], // First Answer Choice
+			["fclose;", false], // Second Answer Choice
+			["fgets;", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["fopen", false], // First Answer Choice
+			["fclose;", true], // Second Answer Choice
+			["fgets;", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["printf", false], // First Answer Choice
+			["fprint", false], // Second Answer Choice
+			["fprintf", true] // Third Answer Choice
+		]
+	],
+	//Second Question
+	[
+	    [	// Answers for First variant
+			["fgets", true], // First Answer Choice
+			["fclose", false], // Second Answer Choice
+			["fopen", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["*afile FILE;", false], // First Answer Choice
+			["FILE *afile;", true], // Second Answer Choice
+			["afile *file;", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["-", false], // First Answer Choice
+			["/", false], // Second Answer Choice
+			["\\\\", true] // Third Answer Choice
+		]
+	]
+];
+
+// Level 4, Section 2: Object Oriented Programming
+answers[3, 2] = 
+[ 
+	//First Question
+	[
+	    [	// Answers for First variant
+			["Inheritence; Abstraction; Encapsulation; Polymorphism", true], // First Answer Choice
+			["Analyze; Design; Code; Test", false], // Second Answer Choice
+			["Input; Output; Process; Storage", false] // Third Answer Choice
+		],
+		 [	// Answers for Second variant
+			["A variable that stores a number.", false], // First Answer Choice
+			["Anything that has attributes and can perform methods.", true], // Second Answer Choice
+			["A string that states the name and location of a variable.", false] // Third Answer Choice
+		],
+		 [	// Answers for Third variant
+			["Efficiency", false], // First Answer Choice
+			["Reusability", false], // Second Answer Choice
+			["Simpler", true] // Third Answer Choice
+		]
+	]
+];
+
 // Set Up Answers
 var current_answers = answers[global.current_level - 1, global.current_section][global.question_in_section][question.variation - 1];
 
