@@ -129,6 +129,7 @@
     {"id":{"name":"spr_reverse_idle","path":"sprites/spr_reverse_idle/spr_reverse_idle.yy",},},
     {"id":{"name":"spr_start_background","path":"sprites/spr_start_background/spr_start_background.yy",},},
     {"id":{"name":"spr_tutorial_btn","path":"sprites/spr_tutorial_btn/spr_tutorial_btn.yy",},},
+    {"id":{"name":"Sprite27","path":"sprites/Sprite27/Sprite27.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

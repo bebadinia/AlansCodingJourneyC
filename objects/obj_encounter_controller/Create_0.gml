@@ -155,7 +155,7 @@ answers[0, 1] =
 		],
 		 [	// Answers for Third variant
 			["x = 100.1;", false], // First Answer Choice
-			["x = ‘100’;", false], // Second Answer Choice
+			["x = \'100\';", false], // Second Answer Choice
 			["x = 100;", true] // Third Answer Choice
 		]
 	]

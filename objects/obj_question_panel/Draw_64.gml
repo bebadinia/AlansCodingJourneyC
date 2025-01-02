@@ -6,4 +6,4 @@ draw_set_valign(fa_middle);
 draw_set_color(c_white);
 
 //draw_text(x, y, board_question);
-draw_text_ext(room_width/2, y, question_text, 40, 600);  // Line height 20, max width 360
+draw_text_ext(room_width/2, y, question_text, 40, 700);  // Line height 20, max width 360

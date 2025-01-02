@@ -4,8 +4,8 @@ fading = false;
 
 
 randomize();
-//variation = irandom_range(1, 3);  // Random number between 1 and 3
-variation = 3; //Testing each variation
+variation = irandom_range(1, 3);  // Random number between 1 and 3
+//variation = 3; //Testing each variation
 
 // Question data structure
 

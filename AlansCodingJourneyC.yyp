@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"AlansCodingJourneyV2",
+  "%Name":"AlansCodingJourneyC",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -54,7 +54,7 @@
   "MetaData":{
     "IDEVersion":"2024.11.0.179",
   },
-  "name":"AlansCodingJourneyV2",
+  "name":"AlansCodingJourneyC",
   "resources":[
     {"id":{"name":"fnt_button","path":"fonts/fnt_button/fnt_button.yy",},},
     {"id":{"name":"fnt_normal","path":"fonts/fnt_normal/fnt_normal.yy",},},
@@ -124,6 +124,18 @@
     {"id":{"name":"spr_inverted_spr","path":"sprites/spr_inverted_spr/spr_inverted_spr.yy",},},
     {"id":{"name":"spr_java_btn","path":"sprites/spr_java_btn/spr_java_btn.yy",},},
     {"id":{"name":"spr_java_enemy","path":"sprites/spr_java_enemy/spr_java_enemy.yy",},},
+    {"id":{"name":"spr_level1_section0","path":"sprites/spr_level1_section0/spr_level1_section0.yy",},},
+    {"id":{"name":"spr_level1_section1","path":"sprites/spr_level1_section1/spr_level1_section1.yy",},},
+    {"id":{"name":"spr_level1_section2","path":"sprites/spr_level1_section2/spr_level1_section2.yy",},},
+    {"id":{"name":"spr_level2_section0","path":"sprites/spr_level2_section0/spr_level2_section0.yy",},},
+    {"id":{"name":"spr_level2_section1","path":"sprites/spr_level2_section1/spr_level2_section1.yy",},},
+    {"id":{"name":"spr_level2_section2","path":"sprites/spr_level2_section2/spr_level2_section2.yy",},},
+    {"id":{"name":"spr_level3_section0","path":"sprites/spr_level3_section0/spr_level3_section0.yy",},},
+    {"id":{"name":"spr_level3_section1","path":"sprites/spr_level3_section1/spr_level3_section1.yy",},},
+    {"id":{"name":"spr_level3_section2","path":"sprites/spr_level3_section2/spr_level3_section2.yy",},},
+    {"id":{"name":"spr_level4_section0","path":"sprites/spr_level4_section0/spr_level4_section0.yy",},},
+    {"id":{"name":"spr_level4_section1","path":"sprites/spr_level4_section1/spr_level4_section1.yy",},},
+    {"id":{"name":"spr_level4_section2","path":"sprites/spr_level4_section2/spr_level4_section2.yy",},},
     {"id":{"name":"spr_python_btn","path":"sprites/spr_python_btn/spr_python_btn.yy",},},
     {"id":{"name":"spr_python_enemy","path":"sprites/spr_python_enemy/spr_python_enemy.yy",},},
     {"id":{"name":"spr_reverse_idle","path":"sprites/spr_reverse_idle/spr_reverse_idle.yy",},},
