@@ -12,33 +12,33 @@ tutorialButton.sprite_index = spr_tutorial_btn;
 tutorialButton.unlocked = false;
 tutorialButton.selected = false;
 
-//Create C button
-cButton = instance_create_layer(450, 310, "UILayer", obj_level_button);
-cButton.level_type = 1;
-cButton.sprite_index = spr_c_btn;
-cButton.unlocked = (global.highest_level >= 1);
-cButton.selected = true;
+//Create First Level button
+firstLevelButton = instance_create_layer(450, 310, "UILayer", obj_level_button);
+firstLevelButton.level_type = 1;
+firstLevelButton.sprite_index = spr_fundamental_btn;
+firstLevelButton.unlocked = (global.highest_level >= 1);
+firstLevelButton.selected = true;
 
 
-//Create C++ button
-cppButton = instance_create_layer(640, 310, "UILayer", obj_level_button);
-cppButton.level_type = 2;
-cppButton.sprite_index = spr_cpp_btn;
-cppButton.unlocked = (global.highest_level >= 2);
+//Create Second Level button
+secondLevelButton = instance_create_layer(640, 310, "UILayer", obj_level_button);
+secondLevelButton.level_type = 2;
+secondLevelButton.sprite_index = spr_control_btn;
+secondLevelButton.unlocked = (global.highest_level >= 2);
 
 
-//Create Python button
-pythonButton = instance_create_layer(830, 310, "UILayer", obj_level_button);
-pythonButton.level_type = 3;
-pythonButton.sprite_index = spr_python_btn;
-pythonButton.unlocked = (global.highest_level >= 3);
+//Create Third Level button
+thirdLevelButton = instance_create_layer(830, 310, "UILayer", obj_level_button);
+thirdLevelButton.level_type = 3;
+thirdLevelButton.sprite_index = spr_data_btn;
+thirdLevelButton.unlocked = (global.highest_level >= 3);
 
 
-//Create Java button
-javaButton = instance_create_layer(1020, 310, "UILayer", obj_level_button);
-javaButton.level_type = 4;
-javaButton.sprite_index = spr_java_btn;
-javaButton.unlocked = (global.highest_level >= 4);
+//Create Fourth Level button
+fourthLevelButton = instance_create_layer(1020, 310, "UILayer", obj_level_button);
+fourthLevelButton.level_type = 4;
+fourthLevelButton.sprite_index = spr_complex_btn;
+fourthLevelButton.unlocked = (global.highest_level >= 4);
 
 
 // Create play button

@@ -34,7 +34,7 @@ if (!unlocked)
 else 
 {
 	draw_set_color(c_white); 
-	
+	draw_set_font(fnt_select);
 	draw_sprite_ext(sprite_index, 0, x, y, image_xscale, image_yscale, 0, c_white, 1);
     
 	
@@ -44,16 +44,16 @@ else
 			draw_text(x, y + 100, "Tutorial");
 			break;
 		case 1:
-			draw_text(x, y + 100, "C");
+			draw_text(x, y + 100, "Fundamentals");
 			break;
 		case 2:
-			draw_text(x, y + 100, "C++");
+			draw_text(x, y + 100, "Control Flows");
 			break;
 		case 3:
-			draw_text(x, y + 100, "Python");
+			draw_text(x, y + 100, "Data Structures");
 			break;
 		case 4:
-			draw_text(x, y + 100, "Java");
+			draw_text(x, y + 100, "Complex Concepts");
 			break;
 	}
 	

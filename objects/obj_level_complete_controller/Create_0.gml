@@ -17,24 +17,24 @@ with(obj_game_controller)
 switch(global.current_level) 
 {
 	case 0: // Tutorial
-        completed_text = "You've mastered Tutorial";
+        completed_text = "You've passed Tutorial";
         next_text = " is now unlocked!";
-        next_logo = spr_c_enemy;
+        next_logo = spr_fundamental_btn;
         break;
     case 1: // C
-        completed_text = "You've mastered C";
+        completed_text = "You've mastered Fundamentals";
         next_text = " is now unlocked!";
-        next_logo = spr_cpp_enemy;
+        next_logo = spr_control_btn;
         break;
     case 2: // C++
-        completed_text = "You've mastered C++";
+        completed_text = "You've mastered Control Flows";
         next_text = " is now unlocked!";
-        next_logo = spr_python_enemy;
+        next_logo = spr_data_btn;
         break;
     case 3: // Python
-        completed_text = "You've mastered Python";
+        completed_text = "You've mastered Data Structures";
         next_text = " is now unlocked!";
-        next_logo = spr_java_enemy;
+        next_logo = spr_complex_btn;
         break;
     case 4: // Java
         completed_text = "You've mastered Java!";

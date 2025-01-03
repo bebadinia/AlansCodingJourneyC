@@ -15,7 +15,7 @@ draw_text(room_width/2, 250, completed_text);
 // Draw next level logo if there is one
 if (next_logo != noone) 
 {
-    draw_sprite(next_logo, 0, room_width/2 - 250, room_height/2 + 125);
+    draw_sprite(next_logo, 0, room_width/2 - 250, room_height/2 + 48);
 }
 // Draw next level text in red
 draw_set_color(c_red);

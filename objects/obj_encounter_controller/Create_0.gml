@@ -597,8 +597,8 @@ answers[3, 1] =
 		],
 		 [	// Answers for Second variant
 			["fopen", false], // First Answer Choice
-			["fclose;", true], // Second Answer Choice
-			["fgets;", false] // Third Answer Choice
+			["fclose", true], // Second Answer Choice
+			["fgets", false] // Third Answer Choice
 		],
 		 [	// Answers for Third variant
 			["printf", false], // First Answer Choice
