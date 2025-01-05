@@ -14,6 +14,14 @@ if (hovering && clicked)
 			instance_destroy(obj_detail_panel);
 			instance_destroy();
 		    break;
+		case "close_tutorial":
+			instance_destroy(obj_dark_overlay);
+			instance_destroy(obj_detail_tutorial);
+			instance_destroy();
+		    break;
+		case "level":
+			room_goto(rm_level_select);
+			break;
 	}
 }
 else

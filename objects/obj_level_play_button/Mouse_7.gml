@@ -21,23 +21,23 @@ if (hovering && clicked)
 	switch(selected_level) 
 	{
         case 0: // Tutorial
-            room_goto(rm_c_learn);
+            room_goto(rm_tutorial_learn);
 			show_debug_message("Tutorial");
             break;
-        case 1: // C
-            room_goto(rm_c_learn);
+        case 1: // First
+            room_goto(rm_first_learn);
 			show_debug_message(selected_level);
             break;
-        case 2: // C++
-            room_goto(rm_cpp_learn);
+        case 2: // Second
+            room_goto(rm_second_learn);
 			show_debug_message(selected_level);
             break;
-		case 3: // Python
-            room_goto(rm_python_learn);
+		case 3: // Third
+            room_goto(rm_third_learn);
 			show_debug_message(selected_level);
             break;
-		case 4: // Java
-            room_goto(rm_java_learn);
+		case 4: // Fourth
+            room_goto(rm_fourth_learn);
 			show_debug_message(selected_level);
             break;
     }

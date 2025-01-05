@@ -21,22 +21,22 @@ switch(global.current_level)
         next_text = " is now unlocked!";
         next_logo = spr_fundamental_btn;
         break;
-    case 1: // C
+    case 1: // First
         completed_text = "You've mastered Fundamentals";
         next_text = " is now unlocked!";
         next_logo = spr_control_btn;
         break;
-    case 2: // C++
+    case 2: // Second
         completed_text = "You've mastered Control Flows";
         next_text = " is now unlocked!";
         next_logo = spr_data_btn;
         break;
-    case 3: // Python
+    case 3: // Third
         completed_text = "You've mastered Data Structures";
         next_text = " is now unlocked!";
         next_logo = spr_complex_btn;
         break;
-    case 4: // Java
+    case 4: // Fourth
         completed_text = "You've mastered Java!";
         next_text = "Congratulations on completing all levels!";
         next_logo = noone;

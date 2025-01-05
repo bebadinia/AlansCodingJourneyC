@@ -15,10 +15,18 @@ if (global.can_move)
 		x = sprite_half_width;
 		hspeed = 0;
 	}
-
+	
+	if(room == rm_tutorial_learn && global.tutorial_lock = true)
+	{
+		 if (x + hspeed > room_width - sprite_half_width)
+         {
+             x = room_width - sprite_half_width;
+             hspeed = 0;
+         }
+	}
 	
 	// Right boundary (only enforce in encounter room if enemy exists)
-    if (room == rm_c_encounter || room == rm_cpp_encounter || room == rm_python_encounter || room == rm_java_encounter)
+    if (room == rm_tutorial_encounter || room == rm_first_encounter || room == rm_second_encounter || room == rm_third_encounter || room == rm_fourth_encounter)
     {
         if (instance_exists(obj_enemy_parent))
         {
@@ -139,17 +147,33 @@ if (global.can_move)
 	{
 		switch(room) 
 		{
-			// C Transitioning	
-			case rm_c_learn: 
-				room_goto(rm_c_encounter);
+			// Tutorial Level Transitioning	
+			case rm_tutorial_learn: 
+				room_goto(rm_tutorial_encounter);
 				break;
             
-	        case rm_c_encounter: 
+	        case rm_tutorial_encounter: 
+				//global.current_section = 0;
+				//global.question_in_section = 0;
+				//global.number_of_questions = 0;
+				with(obj_heart_controller)
+				{
+					current_hearts = max_hearts;
+				}
+				room_goto(rm_level_complete);
+	            break;
+			
+			// First Level Transitioning	
+			case rm_first_learn: 
+				room_goto(rm_first_encounter);
+				break;
+            
+	        case rm_first_encounter: 
 	            if ((global.question_in_section + 1) < global.number_of_questions) 
 				{
 	                global.question_in_section++;
 					show_debug_message("Incrementing question to " + string(global.question_in_section + 1));
-	                room_goto(rm_c_encounter);
+	                room_goto(rm_first_encounter);
 	            } 
 				else 
 				{
@@ -161,7 +185,7 @@ if (global.can_move)
 						global.question_in_section = 0;
 						//global.number_of_questions = 0;
 						show_debug_message("Incrementing section to " + string(global.current_section));
-						room_goto(rm_c_learn); // Go to next learn page
+						room_goto(rm_first_learn); // Go to next learn page
 					}
 					else // Go to next level
 					{
@@ -177,17 +201,18 @@ if (global.can_move)
 	            }
 	            break;
 				
-			// Python Transitioning	
-			case rm_python_learn:
-				room_goto(rm_python_encounter);
+				
+			//Second Level Transitioning	
+			case rm_second_learn: 
+				room_goto(rm_second_encounter);
 				break;
             
-	        case rm_python_encounter:
+	        case rm_second_encounter: 
 	           if ((global.question_in_section + 1) < global.number_of_questions) 
 				{
 	                global.question_in_section++;
 					show_debug_message("Incrementing question to " + string(global.question_in_section + 1));
-	                room_goto(rm_python_encounter);
+	                room_goto(rm_second_encounter);
 	            } 
 				else 
 				{
@@ -199,7 +224,7 @@ if (global.can_move)
 						global.question_in_section = 0;
 						//global.number_of_questions = 0;
 						show_debug_message("Incrementing section to " + string(global.current_section));
-						room_goto(rm_python_learn); // Go to next learn page
+						room_goto(rm_second_learn); // Go to next learn page
 					}
 					else // Go to next level
 					{
@@ -216,17 +241,17 @@ if (global.can_move)
 	            break;
 				
 				
-			//CPP Transitioning	
-			case rm_cpp_learn: 
-				room_goto(rm_cpp_encounter);
+			// Third Level Transitioning	
+			case rm_third_learn:
+				room_goto(rm_third_encounter);
 				break;
             
-	        case rm_cpp_encounter: 
+	        case rm_third_encounter:
 	           if ((global.question_in_section + 1) < global.number_of_questions) 
 				{
 	                global.question_in_section++;
 					show_debug_message("Incrementing question to " + string(global.question_in_section + 1));
-	                room_goto(rm_cpp_encounter);
+	                room_goto(rm_third_encounter);
 	            } 
 				else 
 				{
@@ -238,7 +263,7 @@ if (global.can_move)
 						global.question_in_section = 0;
 						//global.number_of_questions = 0;
 						show_debug_message("Incrementing section to " + string(global.current_section));
-						room_goto(rm_cpp_learn); // Go to next learn page
+						room_goto(rm_third_learn); // Go to next learn page
 					}
 					else // Go to next level
 					{
@@ -253,19 +278,19 @@ if (global.can_move)
 					}
 	            }
 	            break;
+			
 				
-				
-			//Java Transitioning	
-			case rm_java_learn: 
-				room_goto(rm_java_encounter);
+			//Fourth Level Transitioning	
+			case rm_fourth_learn: 
+				room_goto(rm_fourth_encounter);
 				break;
             
-	        case rm_java_encounter: 
+	        case rm_fourth_encounter: 
 	            if ((global.question_in_section + 1) < global.number_of_questions) 
 				{
 	                global.question_in_section++;
 					show_debug_message("Incrementing question to " + string(global.question_in_section + 1));
-	                room_goto(rm_java_encounter);
+	                room_goto(rm_fourth_encounter);
 	            } 
 				else 
 				{
@@ -277,7 +302,7 @@ if (global.can_move)
 						global.question_in_section = 0;
 						//global.number_of_questions = 0;
 						show_debug_message("Incrementing section to " + string(global.current_section));
-						room_goto(rm_java_learn); // Go to next learn page
+						room_goto(rm_fourth_learn); // Go to next learn page
 					}
 					else // Go to next level
 					{

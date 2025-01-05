@@ -5,7 +5,15 @@ global.can_move = false;
 
 // Create question panel first (using your existing question panel object)
 question = instance_create_layer(640, 75, "UILayer", obj_question_panel);
-global.number_of_questions = array_length(obj_question_panel.questions[global.current_level-1, global.current_section]); //Set number of questions for each section
+
+if(current_level != 0)
+{
+	global.number_of_questions = array_length(obj_question_panel.questions[global.current_level, global.current_section]); //Set number of questions for each section
+}
+else
+{
+	global.number_of_questions = 1;
+}
 show_debug_message("Number of questions: " + string(global.number_of_questions));
 
 // Create three buttons using your existing button object
@@ -24,9 +32,17 @@ button3.image_yscale = 1.5;
 
 // Arrays to store all answers
 
+//Tutorial Question
+answers[0, 0] = 
+[ 
+			["BEN", false], // First Answer Choice
+			["ALAN", true], // Second Answer Choice
+			["CAROL", false] // Third Answer Choice
+];
+
 //Level 1
 // Level 1, Section 0: Introduction and Main
-answers[0, 0] = 
+answers[1, 0] = 
 [ 
 	//First Question
 	[
@@ -103,7 +119,7 @@ answers[0, 0] =
 ];
 
 // Level 1, Section 1:  Variables and Expressions
-answers[0, 1] = 
+answers[1, 1] = 
 [ 
 	//First Question
 	[
@@ -162,7 +178,7 @@ answers[0, 1] =
 ];
 
 // Level 1, Section 2:  Input and Operations
-answers[0, 2] = 
+answers[1, 2] = 
 [ 
 	//First Question
 	[
@@ -223,7 +239,7 @@ answers[0, 2] =
 
 //Level 2
 // Level 2, Section 0: Conditionals
-answers[1, 0] = 
+answers[2, 0] = 
 [ 
 	//First Question
 	[
@@ -282,7 +298,7 @@ answers[1, 0] =
 ];
 
 // Level 2, Section 1: Functions
-answers[1, 1] = 
+answers[2, 1] = 
 [ 
 	//First Question
 	[
@@ -323,7 +339,7 @@ answers[1, 1] =
 ];
 
 // Level 2, Section 2: Loops
-answers[1, 2] = 
+answers[2, 2] = 
 [ 
 	//First Question
 	[
@@ -384,7 +400,7 @@ answers[1, 2] =
 
 //Level 3
 // Level 3, Section 0: Arrays
-answers[2, 0] = 
+answers[3, 0] = 
 [ 
 	//First Question
 	[
@@ -443,7 +459,7 @@ answers[2, 0] =
 ];
 
 // Level 3, Section 1: Strings
-answers[2, 1] = 
+answers[3, 1] = 
 [ 
 	//First Question
 	[
@@ -520,7 +536,7 @@ answers[2, 1] =
 ];
 
 // Level 3, Section 2: Addresses/Pointers
-answers[2, 2] = 
+answers[3, 2] = 
 [ 
 	//First Question
 	[
@@ -545,7 +561,7 @@ answers[2, 2] =
 
 //Level 4
 // Level 4, Section 0: Enumerate and Structures
-answers[3, 0] = 
+answers[4, 0] = 
 [ 
 	//First Question
 	[
@@ -586,7 +602,7 @@ answers[3, 0] =
 ];
 
 // Level 4, Section 1: File Input and Output
-answers[3, 1] = 
+answers[4, 1] = 
 [ 
 	//First Question
 	[
@@ -627,7 +643,7 @@ answers[3, 1] =
 ];
 
 // Level 4, Section 2: Object Oriented Programming
-answers[3, 2] = 
+answers[4, 2] = 
 [ 
 	//First Question
 	[
@@ -650,7 +666,14 @@ answers[3, 2] =
 ];
 
 // Set Up Answers
-var current_answers = answers[global.current_level - 1, global.current_section][global.question_in_section][question.variation - 1];
+if(current_level != 0)
+{
+	var current_answers = answers[global.current_level, global.current_section][global.question_in_section][question.variation - 1];
+}
+else
+{
+	var current_answers = answers[0, 0];
+}
 
 button1.text = current_answers[0][0];
 button1.is_correct = current_answers[0][1];

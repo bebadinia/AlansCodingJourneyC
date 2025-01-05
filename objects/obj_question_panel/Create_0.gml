@@ -9,9 +9,12 @@ variation = irandom_range(1, 3);  // Random number between 1 and 3
 
 // Question data structure
 
+// Tutorial Question
+questions[0, 0] = "What is your name?\n (Hint: It is the name of the game?)";
+
 //Level 1
 // Level 1, Section 0: Introduction and Main
-questions[0, 0] = 
+questions[1, 0] = 
 [  
 	[	// First Question
 		"How many bytes are in a KB?", // First variant
@@ -36,7 +39,7 @@ questions[0, 0] =
 ];
 
 // Level 1, Section 1: Variables and Expressions
-questions[0, 1] = 
+questions[1, 1] = 
 [  
 	[	// First Question
 		"In C, the syntax to declare an integer variable called x is", // First variant
@@ -56,7 +59,7 @@ questions[0, 1] =
 ];
 
 // Level 1, Section 2: Input and Operations
-questions[0, 2] = 
+questions[1, 2] = 
 [  
 	[	// First Question
 		"In programming, what is the highest order of operations?", // First variant
@@ -78,7 +81,7 @@ questions[0, 2] =
 
 //Level 2
 // Level 2, Section 0: Conditionals
-questions[1, 0] = 
+questions[2, 0] = 
 [  
 	[	// First Question
 		"Which is the C symbol for logical 'and'?", // First variant
@@ -98,7 +101,7 @@ questions[1, 0] =
 ];
 
 // Level 2, Section 1: Functions
-questions[1, 1] = 
+questions[2, 1] = 
 [  
 	[	// First Question
 		"How many values can be returned from a function?", // First variant
@@ -113,7 +116,7 @@ questions[1, 1] =
 ];
 
 // Level 2, Section 2: Loops
-questions[1, 2] = 
+questions[2, 2] = 
 [  
 	[	// First Question
 		"When are loops used?", // First variant
@@ -135,7 +138,7 @@ questions[1, 2] =
 
 //Level 3
 // Level 3, Section 0: Arrays
-questions[2, 0] = 
+questions[3, 0] = 
 [  
 	[	// First Question
 		"How many dimensions is this array?\n char multiDim[5][10][2][20];", // First variant
@@ -155,7 +158,7 @@ questions[2, 0] =
 ];
 
 // Level 3, Section 1: Strings
-questions[2, 1] = 
+questions[3, 1] = 
 [  
 	[	// First Question
 		"Which symbol is used for the end of a string for printing, also called the null character?", // First variant
@@ -180,7 +183,7 @@ questions[2, 1] =
 ];
 
 // Level 3, Section 2: Addresses/Pointers
-questions[2, 2] = 
+questions[3, 2] = 
 [  
 	[	// First Question
 		"Fill in the blank for this pointer declaration:\n int ___ptrNum;", // First variant
@@ -192,7 +195,7 @@ questions[2, 2] =
 
 //Level 4
 // Level 4, Section 0: Enumerate and Structures
-questions[3, 0] = 
+questions[4, 0] = 
 [  
 	[	// First Question
 		"Which declaration command can be used to create words as values?", // First variant
@@ -207,7 +210,7 @@ questions[3, 0] =
 ];
 
 // Level 4, Section 1: File Input and Output
-questions[3, 1] = 
+questions[4, 1] = 
 [  
 	[	// First Question
 		"Which command is used to open a file?", // First variant
@@ -222,7 +225,7 @@ questions[3, 1] =
 ];
 
 // Level 4, Section 2: Object Oriented Programming
-questions[3, 2] = 
+questions[4, 2] = 
 [  
 	[	// First Question
 		"What are the 4 methods in OOP?", // First variant
@@ -231,5 +234,13 @@ questions[3, 2] =
 	]
 ];
 
-question_text = questions[global.current_level - 1, global.current_section][global.question_in_section][variation - 1];
 
+// Set up questions
+if(current_level != 0)
+{
+	question_text = questions[global.current_level, global.current_section][global.question_in_section][variation - 1];
+}
+else
+{
+	question_text = questions[0, 0];
+}

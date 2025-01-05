@@ -21,12 +21,12 @@ function new_game()
 {
     // Set default if no save exists
     globalvar highest_level;
-    global.highest_level = 1;  // Start with only tutorial unlocked
+    global.highest_level = 0;  // Start with only tutorial unlocked
 }
     
 // Initialize other variables (not saved)
-globalvar current_encounter, can_move, current_level;
-global.current_encounter = 1;  // Always start at first encounter
+globalvar can_move, current_level; //current_encounter, 
+//global.current_encounter = 1;  // Always start at first encounter
 global.current_level = 0;  // 0=tutorial, 1=C, 2=C++, 3=Python, 4=Java
 can_move = true;  // Will be set to false in encounter rooms
 
@@ -39,6 +39,8 @@ global.question_in_section = 0;  // Start with first question in section
 globalvar number_of_questions;
 global.number_of_questions = 0;
 
+globalvar tutorial_lock;
+global.tutorial_lock = true;
 
 // Create a save function
 function save_game() 

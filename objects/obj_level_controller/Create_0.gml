@@ -4,20 +4,23 @@
 backButton = instance_create_layer(64, 64, "UILayer", obj_back_button);
 backButton.backButton_type = "start";
 
+// Create back button
+trophyButton = instance_create_layer(1120, 32, "UILayer", obj_trophy_button);
+
 
 //Create Tutorial button
 tutorialButton = instance_create_layer(260, 310, "UILayer", obj_level_button);
 tutorialButton.level_type = 0;
 tutorialButton.sprite_index = spr_tutorial_btn;
-tutorialButton.unlocked = false;
-tutorialButton.selected = false;
+tutorialButton.unlocked = true;
+tutorialButton.selected = true;
 
 //Create First Level button
 firstLevelButton = instance_create_layer(450, 310, "UILayer", obj_level_button);
 firstLevelButton.level_type = 1;
 firstLevelButton.sprite_index = spr_fundamental_btn;
 firstLevelButton.unlocked = (global.highest_level >= 1);
-firstLevelButton.selected = true;
+//firstLevelButton.selected = true;
 
 
 //Create Second Level button

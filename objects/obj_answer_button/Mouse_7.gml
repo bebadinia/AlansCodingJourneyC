@@ -7,34 +7,6 @@ if (hovering && clicked)
 	if (is_correct)
 	{
 		global.can_move = true;
-		
-		/*switch(global.current_section)
-		{
-			case 0: //First Section
-				if(global.question_in_section < array_length(obj_question_panel.questions[global.current_level-1, global.current_section]))
-				{
-					global.question_in_section++;
-				}
-				else
-				{global
-					global.question_in_section = 0;
-					global.current_section++;
-				}
-				break;
-			case 1: //Second Section
-				if(global.question_in_section < array_length(obj_question_panel.questions[global.current_level-1, global.current_section]))
-				{
-					global.question_in_section++;
-				}
-				else
-				{
-					global.question_in_section = 0;
-					global.current_section++;
-				}
-				break;
-			case 2: //Third Section
-				break;
-		}*/
 			
 		// Start fading all buttons and question panel
 		with(obj_answer_button) 
@@ -47,7 +19,7 @@ if (hovering && clicked)
 			fading = true;
 		}
     
-		show_message("Correct! Movement enabled");
+		show_message("Correct! Squish that bug!");
 			
 		with(obj_heart_controller) 
 		{
