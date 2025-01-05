@@ -40,6 +40,7 @@ switch(global.current_level)
         completed_text = "You've mastered Java!";
         next_text = "Congratulations on completing all levels!";
         next_logo = noone;
+		global.game_complete = true;
         break;
 }
 
