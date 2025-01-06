@@ -59,6 +59,8 @@ if(tutorial_stage == 0 || tutorial_stage == 2 || tutorial_stage == 5)
 		}
 		if(tutorial_stage == 5)
 		{	
+			depth = -100;
+			show_debug_message("Object depth: " + string(obj_heart_controller.depth));
 			var _len = string_length(text[text_current]);
 	
 			if (char_current < _len)
@@ -74,6 +76,10 @@ if(tutorial_stage == 0 || tutorial_stage == 2 || tutorial_stage == 5)
 					draw_set_color(c_white)
 					instance_destroy();
 		        }
+				else if (text_current == 13)
+				{
+					depth = 100;
+				}
 				else
 		        {
 					text[text_current] = string_wrap(text[text_current], 1200);

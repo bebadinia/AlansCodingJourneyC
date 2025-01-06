@@ -15,31 +15,31 @@ firstTrophy.unlocked = (global.highest_level - 1) >= 0;
 secondTrophy = instance_create_layer(640, 250, "UILayer", obj_achievement_trophy);
 secondTrophy.level_type = 1;
 secondTrophy.sprite_index = spr_tape_drive;
-secondTrophy.unlocked = true;//((global.highest_level - 1) >= 1);
+secondTrophy.unlocked = ((global.highest_level - 1) >= 1); //true;
 
 //Create Top Right Level Trophy
 thirdTrophy = instance_create_layer(1020, 250, "UILayer", obj_achievement_trophy);
 thirdTrophy.level_type = 2;
 thirdTrophy.sprite_index = spr_floppy_disk;
-thirdTrophy.unlocked = true;//((global.highest_level - 1) >= 2);
+thirdTrophy.unlocked = ((global.highest_level - 1) >= 2); //true;
 
 //Create Bottom Left Trophy
 fourthTrophy = instance_create_layer(260, 550, "UILayer", obj_achievement_trophy);
 fourthTrophy.level_type = 3;
 fourthTrophy.sprite_index = spr_cd_disk;
-fourthTrophy.unlocked = true;//((global.highest_level - 1) >= 3);
+fourthTrophy.unlocked = ((global.highest_level - 1) >= 3); //true;
 
 //Create Bottom Middle Level Trophy
 fifthTrophy = instance_create_layer(640, 550, "UILayer", obj_achievement_trophy);
 fifthTrophy.level_type = 4;
 fifthTrophy.sprite_index = spr_usb_drive;
-fifthTrophy.unlocked = true;//((global.highest_level >= 4) && (global.game_complete == true));
+fifthTrophy.unlocked = ((global.highest_level >= 4) && (global.game_complete == true)); //true;
 
 //Create Bottom Right Level Trophy
 sixthTrophy = instance_create_layer(1020, 550, "UILayer", obj_achievement_trophy);
 sixthTrophy.level_type = 5;
 sixthTrophy.sprite_index = spr_wizard;
-sixthTrophy.unlocked = true;//((global.highest_level >= 4) && (global.game_complete == true));
+sixthTrophy.unlocked = ((global.highest_level >= 4) && (global.game_complete == true)); //true;
 
 
 

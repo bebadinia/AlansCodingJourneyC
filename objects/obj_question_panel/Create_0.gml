@@ -10,7 +10,7 @@ variation = irandom_range(1, 3);  // Random number between 1 and 3
 // Question data structure
 
 // Tutorial Question
-questions[0, 0] = "What is your name?\n (Hint: It is the name of the game?)";
+questions[0, 0] = "What is your name?\n (Hint: It is the name of the game!)";
 
 //Level 1
 // Level 1, Section 0: Introduction and Main

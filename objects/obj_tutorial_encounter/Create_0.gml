@@ -1,4 +1,4 @@
-//Create Event for obj_tutorial_controller
+//Create Event for obj_tutorial_encounter
 global.can_move = false;
 tutorial_question = true;
 
