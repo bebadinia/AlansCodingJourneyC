@@ -41,6 +41,10 @@ switch(global.current_level)
         next_text = "Congratulations on completing all levels!";
         next_logo = noone;
 		global.game_complete = true;
+		with(obj_game_controller)
+		{
+			save_game();
+		}
         break;
 }
 

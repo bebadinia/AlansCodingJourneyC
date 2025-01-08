@@ -608,8 +608,8 @@ answers[4, 1] =
 	[
 	    [	// Answers for First variant
 			["fopen", true], // First Answer Choice
-			["fclose;", false], // Second Answer Choice
-			["fgets;", false] // Third Answer Choice
+			["fclose", false], // Second Answer Choice
+			["fgets", false] // Third Answer Choice
 		],
 		 [	// Answers for Second variant
 			["fopen", false], // First Answer Choice
