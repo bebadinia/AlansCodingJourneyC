@@ -16,6 +16,6 @@ if (room != rm_start && room != rm_level_select && room != rm_game_over && room 
 	    else 
 		{
 	        draw_sprite(spr_heart, 1, start_x + (i * heart_spacing), start_y);
-	    }
+		}
 	}
 }
