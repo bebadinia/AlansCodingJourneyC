@@ -49,11 +49,3 @@ playButton = instance_create_layer(room_width/2, room_height - 100, "UILayer", o
 playButton.image_xscale = 1.152381;
 playButton.image_yscale = 1.316832;
 playButton.text = "Play";
-
-
-
-
-
-
-
-

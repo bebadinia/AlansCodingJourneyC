@@ -1,4 +1,3 @@
-// Modify Draw Event for flashing effect
 if (room != rm_start && room != rm_level_select && room != rm_game_over && room != rm_level_complete && room != rm_tutorial_learn && room != rm_achievements) // Add any other rooms where hearts shouldn't show
 {  
 	for(var i = 0; i < max_hearts; i++) 

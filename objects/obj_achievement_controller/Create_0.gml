@@ -1,9 +1,8 @@
-// obj_level_select_controller Create Event
+// obj_level_achievement_controller Create Event
 
 // Create back button
 backButton = instance_create_layer(64, 64, "UILayer", obj_back_button);
 backButton.backButton_type = "level";
-
 
 //Create Top Left Trophy
 firstTrophy = instance_create_layer(260, 250, "UILayer", obj_achievement_trophy);
